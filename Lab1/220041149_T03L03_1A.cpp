@@ -41,11 +41,11 @@ class Time
         {
             Sec += s;
             Min += Sec / 60;
-            Sec %= 60; // Reduce seconds to below 60
+            Sec %= 60; 
 
             Min += m;
             Hour += Min / 60;
-            Min %= 60; // Reduce minutes to below 60
+            Min %= 60; 
 
             Hour += h;
             Hour %= 24;
