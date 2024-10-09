@@ -1,4 +1,7 @@
 #include<bits/stdc++.h>
+#include<string>
+#include<functional>
+
 using namespace std;
 
 class Temperature
