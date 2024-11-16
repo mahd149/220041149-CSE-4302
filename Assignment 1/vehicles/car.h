@@ -1,3 +1,5 @@
+//car.h
+
 #ifndef CAR_H
 #define CAR_H
 
@@ -11,9 +13,11 @@ class car: public gasoline
     static int total_cars;
     public:
     car(string lic, string manu, int carry, int cap, string type, int pass);
-    void display()const;
-    void performMaintenance() const;
-    vehicle* clone() const;
+    void display()const override;
+    void performMaintenance() const override;
+    vehicle* clone() const override;
+
+    static int get_total_cars() {return total_cars;}
     ~car();
 };
 

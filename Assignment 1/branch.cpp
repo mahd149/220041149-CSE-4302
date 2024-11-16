@@ -15,7 +15,7 @@ Branch::~Branch() {
 
 // Add a vehicle to the branch
 void Branch::addVehicle(const vehicle* v) {
-    vehicles.push_back(v->clone()); // Clone to maintain polymorphism
+    vehicles.push_back((v->clone())); // Clone to maintain polymorphism
 }
 
 // Perform maintenance for all vehicles
@@ -28,7 +28,7 @@ void Branch::maintenanceAllVehicles() {
 
 // Add an employee to the branch
 void Branch::addEmployee(const employee* e) {
-    employees.push_back(e->clone()); // Clone to maintain polymorphism
+    employees.push_back((e->clone())); // Clone to maintain polymorphism
 }
 
 // Display all vehicles

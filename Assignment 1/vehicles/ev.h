@@ -22,6 +22,8 @@ class ev : virtual public vehicle
         void display()const;
         void performMaintenance() const;
         vehicle* clone() const;
+
+        static int get_total_ev() { return total_evs;}
         ~ev();
 };
 

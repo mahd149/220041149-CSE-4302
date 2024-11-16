@@ -12,7 +12,9 @@ class driver: public employee
     public:
         driver(string name, string ID);
 
-        void display()const;
+       employee* clone()const override;
+       void display() const override;
+       static int get_total_driver() { return total_driver;}
 
         ~driver();
 };
