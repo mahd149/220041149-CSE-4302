@@ -20,7 +20,7 @@ class gasoline : virtual public vehicle
         gasoline(string lic, string manu, int carry, int cap, string type);
         ~gasoline();
 
-        void display() const;
+        void display() const override;
 
         static int get_total_gases() {return total_gases;}
 

@@ -11,6 +11,8 @@ passenger(pass) { total_cars++;}
 
 void car::display() const
 {
+    cout<<"Car: \n";
+    // vehicle::display();
     gasoline::display();
     cout<<"Passenger capacity: "<<passenger<<endl;
 }
@@ -23,3 +25,8 @@ vehicle* car::clone()const{
     return new car(*this);
 }
 
+
+car::~car()
+{
+    total_cars--;
+}

@@ -12,9 +12,11 @@ class truck : public gasoline
     static int total_trucks;
     public:
         truck(string lic, string manu, int carry, int cap, string type, int carry_cap);
-        void display()const;
-        void performMaintenance() const;
-        vehicle* clone() const;
+        void display()const override;
+        void performMaintenance() const override;
+        vehicle* clone() const override;
+
+        static int get_total_trucks() {return total_trucks;}
         ~truck();
 };
 

@@ -1,3 +1,5 @@
+//hybrid.h
+
 #ifndef HYBRID_H
 #define HYBRID_H
 
@@ -14,10 +16,12 @@ class hybrid : public gasoline, public ev
     static int total_hybrid;
 
 public:
-    hybrid(string lic, string manu, int carry, int cap, string type, int battery_cap, int time);
-    void display()const;
-    void performMaintenance() const;
-    vehicle* clone() const;
+    hybrid(string lic, string manu, int carry, int cap, string type, int battery_cap, int time, double efficiency);
+    void display()const override ;
+    void performMaintenance() const override;
+    vehicle* clone() const override;
+
+    static int get_hybrid_vehicle() { return total_hybrid; }
 
     ~hybrid();
 };
