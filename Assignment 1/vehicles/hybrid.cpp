@@ -4,9 +4,9 @@
 
 int hybrid::total_hybrid = 0;
 
-hybrid::hybrid(string lic, string manu, int carry, int cap, string type, int battery_cap, int time, double efficiency)
+hybrid::hybrid(string lic, string manu, int carry, int tank_cap, string type, int battery_cap, int time, double efficiency)
     : vehicle(lic, manu, carry),               // Initialize the virtually inherited base class
-      gasoline(lic, manu, carry, cap, type),   // Initialize the gasoline base class
+      gasoline(lic, manu, carry, tank_cap, type),   // Initialize the gasoline base class
       ev(lic, manu, carry, battery_cap, time), // Initialize the ev base class
       efficiency(efficiency)                   // Initialize member variable
 {

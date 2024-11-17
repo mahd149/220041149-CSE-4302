@@ -3,9 +3,9 @@
 
 int car::total_cars = 0;
 
-car::car(string lic, string manu, int carry, int cap, string type, int pass) :
+car::car(string lic, string manu, int carry, int tank_cap, string fuel_type, int pass) :
 vehicle(lic, manu, carry),//as gasoline inherits vehicle virtually
-gasoline(lic, manu, carry, cap, type),
+gasoline(lic, manu, carry, tank_cap, fuel_type),
 passenger(pass) { total_cars++;}
 
 

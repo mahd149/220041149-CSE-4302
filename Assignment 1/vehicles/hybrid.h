@@ -16,7 +16,7 @@ class hybrid : public gasoline, public ev
     static int total_hybrid;
 
 public:
-    hybrid(string lic, string manu, int carry, int cap, string type, int battery_cap, int time, double efficiency);
+    hybrid(string lic, string manu, int carry, int tank_cap, string fuel_type, int battery_cap, int time, double efficiency);
     void display()const override ;
     void performMaintenance() const override;
     vehicle* clone() const override;

@@ -12,7 +12,7 @@ class car: public gasoline
     int passenger;
     static int total_cars;
     public:
-    car(string lic, string manu, int carry, int cap, string type, int pass);
+    car(string lic, string manu, int carry, int tank_cap, string fuel_type, int pass);
     void display()const override;
     void performMaintenance() const override;
     vehicle* clone() const override;

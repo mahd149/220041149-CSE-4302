@@ -18,7 +18,7 @@ class ev : virtual public vehicle
         static int total_evs;
 
     public:
-        ev(string lic, string manu, int carry, int cap, int time);
+        ev(string lic, string manu, int carry, int batt_cap, int time);
         void display()const override;
         void performMaintenance() const override;
         vehicle* clone() const override;

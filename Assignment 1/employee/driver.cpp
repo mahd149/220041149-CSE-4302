@@ -13,7 +13,7 @@ employee* driver::clone() const{
 
 void driver::display()const{
     
-    cout<<"Name: "<<"Mr."<<get_name()<<endl;
+    cout<<"Name: "<<get_name()<<endl;
     cout<<"ID: "<<get_id()<<endl;
 
 }

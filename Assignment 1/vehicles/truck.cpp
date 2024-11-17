@@ -12,7 +12,7 @@ void truck::display() const{
     cout<<"Truck: \n";
     // vehicle::display();
     gasoline::display();
-    cout<<"Carry Capacity: "<<carry_cap<<" Tons\n";
+    cout<<"Carry Capacity: "<<carry_cap<<" Kgs\n";
 }
 
 void truck::performMaintenance()const{
